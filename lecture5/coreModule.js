@@ -102,6 +102,7 @@ console.log(data);  // it will give the array of command line arguments passed t
 console.log(data[2],data[3]);  
 
 
+
 const a = data[2]
 const b = data[3]
 // if we take 2 and 3 in the command line this will ad the both the number
