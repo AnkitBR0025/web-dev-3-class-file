@@ -8,9 +8,8 @@ app.get("/students/:name",(req,res)=>{
     console.log(req.params.name)
     req.send("hello google")
 })
-app.get("/students",(req,res)=>{
-    console.log(url)
-    console.log(url)
+app.get("/students",(req,res)=>{    
+    console.log(req.url)
 
     res.send("hello students")
 
