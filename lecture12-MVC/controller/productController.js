@@ -19,11 +19,12 @@ const addProducts = (req,res)=>{
     const product = req.body;
     const data=fs.readFileSync("./data/data2.txt","utf-8");
     console.log(data)
-    const getData=JSON.parse(data);
+    const getData = data.trim() ? JSON.parse(data) : [];
     getData.push({id:getData.length+1,...product});
     fs.writeFileSync("./data/data2.txt",JSON.stringify(getData));
     products.push({id:products.length+1,...product});
     res.json({success:true,product})
+
 }
 const updateProducts = (req,res)=>{
     const id=req.params.id;

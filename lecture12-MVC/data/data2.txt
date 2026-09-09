@@ -1,1 +1,1 @@
-[{ id:1, name:"ASUS",category:"laptop",price:80000},{id:2,name:"realme 11x",category:"Mobile",price:18000},{ id:3, name:"IPAD PRO", category:"Tablet",price:8000}]
+[{"id":1,"name":"realme 13x","category":"Mobile","price":18000},{"id":2,"name":"realme 135x","category":"Mobile","price":18000},{"id":3,"name":"realme 135x","category":"Mobile","price":18000}]
