@@ -42,9 +42,9 @@ app.get("products/:id",(req,res)=>{
 
 
 //create
-app.post("/api/projects",(res,req)=>{
+app.post("/api/products",(res,req)=>{
     
-    const project = req.body;
+    const product = req.body;
     products.push({id:products.length+1,...product});
     res.json({success:true,products})
 })
