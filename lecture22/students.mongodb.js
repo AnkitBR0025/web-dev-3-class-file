@@ -66,5 +66,5 @@ use("CollegeDB");
 
 
 // db.students2.find();
-db.students2.find({ course: "B.Tech CSE" }).sort({ marks: -1 }).skip(1).limit(3);
+// db.students2.find({ course: "B.Tech CSE" }).sort({ marks: -1 }).skip(1).limit(3);
 
