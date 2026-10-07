@@ -106,7 +106,7 @@ const server = http.createServer((req, res)=>{
         res.end();
     }else if(req.method === "POST" && req.url === "/products"){
         let body = '';
-        req.on('data', chunk => {
+        req.on('data', (chunk) => {
             body += chunk;
         });
         req.on('end', () => {
