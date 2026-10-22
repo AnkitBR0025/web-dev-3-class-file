@@ -38,7 +38,7 @@ const dns = require('dns');
 //     }
 // })
 
-
+// fs.appendFileSync("sample.txt","\nThis is sync file append code");  //sync function
 // fs.appendFile("./sample.txt", "\nThis is an appended line.", (err) => {   // async function
 //     if (err) {
 //         console.error(err);
@@ -47,8 +47,7 @@ const dns = require('dns');
 //     }
 // })
 
-
-// fs.unlink("./sample1.txt", (err) => {   // async function
+// fs.unlink("./simple.txt", (err) => {   // async function
 //     if (err) {
 //         console.error(err);
 //     }else{
@@ -57,7 +56,7 @@ const dns = require('dns');
 // })
 
 
-// const password = "ankit@8409";
+const password = "ankit@8409";
 
 // // it generates same hash code for the same password
 // const hash = crypto.createHash('sha256').update(password).digest('hex');
@@ -71,15 +70,15 @@ const dns = require('dns');
 // console.log(saltedHash);
 
 // const uid = crypto.randomUUID();
-// // console.log(uid);
+// console.log(uid);
 
 
 // dns.lookup('www.flipkart.com', (err, address, family) => {
 //     if (err) {
 //         console.error(err);
 //     } else {
-//         console.log(address);
-//         console.log(family);
+//         console.log("IP Address:", address);
+//         console.log("IPv",family);
 //     }
 // });
 
@@ -97,19 +96,20 @@ const dns = require('dns');
 //output: [ 'dns.google' ]
 
 
-const data = process.argv
-console.log(data);  // it will give the array of command line arguments passed to the script
-console.log(data[2],data[3]);  
+// const data = process.argv
+// console.log(data);  // it will give the array of command line arguments passed to the script
+// console.log(data[2],data[3]);  
 
 
 
-const a = data[2]
-const b = data[3]
-// if we take 2 and 3 in the command line this will ad the both the number
-const c = Number(a) + Number(b);
-console.log(c); 
+// const a = data[2]
+// const b = data[3]
+// // if we take 2 and 3 in the command line this will ad the both the number
+// const c = Number(a) + Number(b);
+// console.log(c); 
 
 
-// console.log(process.verion)
+// console.log(process.version)
 // console.log(process.platform)
+// console.log(process.arch)
 // console.log(process.pid)

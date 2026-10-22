@@ -33,12 +33,11 @@ app.get("/", (req, res, next) => {
 
 //invalid middleware
 app.use((req, res) => {            
-    res.status(404).send({
+    res.status(404).json({
         success: false,
         message: "Page Not Found"
-    }
-    );
-})
+    });
+});
 
 //error handling middleware
 app.use((err, req, res, next) => {

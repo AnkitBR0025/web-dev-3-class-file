@@ -4,6 +4,7 @@ const http = require('http');
 //     if (req.url === '/') {
 //         res.writeHead(200, { 'Content-Type': 'text/html' });
 //         res.write('<h1>Welcome to the Home Page</h1>');
+//         res.end();
 //     } else if (req.url === '/about') {
 //         res.writeHead(200, { 'Content-Type': 'text/html' });
 //         res.write('<h1>Welcome to About page</h1>');

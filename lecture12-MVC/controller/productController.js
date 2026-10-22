@@ -5,13 +5,12 @@ const getProducts = (req,res)=>{
     res.json({total:products.length,products})
 }
 const getProductById = (req,res)=>{
-    const id = req.params.id;
-    console.log(id)
-    const result = products.find((product)=>product.id==id);
-    if(result==undefined){
-        res.status(404).json({success:false,massage:"products Not Found"})
+    const id = Number(req.params.id);
+    const product = products.find((product)=>product.id==id);
+    if(product==undefined){
+        returnres.status(404).json({success:false,massage:"products Not Found"})
     }
-    res.json({success:true,result})
+    res.json({success:true,product})
 }
 
 const addProducts = (req,res)=>{
