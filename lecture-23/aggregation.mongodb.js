@@ -35,24 +35,41 @@ use("CollegeDB");
 //         $match:{course:"B.Tech CSE",city:"Delhi"}
 //     }
 // ])
-db.students2.aggregate([
-    {
-        $match: { course: "B.Tech CSE" }
-    },
-    {
-        $project: { name: 1, marks: 1, semester: 1, course: 1, _id: 0 }
-    },
-    {
-        $group: {
-            _id: "$semester",
-            totalMarks: { $sum: "$marks" },
-            avgMarks: { $avg: "$marks" },
-            maxMarks: { $max: "$marks" },
-            minMarks: { $min: "$marks" }
-        }
-    },
-    {
-        $sort:{_id:-1}
-    }
-])
+// db.students2.aggregate([
+//     {
+//         $match: { course: "B.Tech CSE" }
+//     },
+//     {
+//         $project: { name: 1, marks: 1, semester: 1, course: 1, _id: 0 }
+//     },
+//     {
+//         $group: {
+//             _id: "$semester",
+//             totalMarks: { $sum: "$marks" },
+//             avgMarks: { $avg: "$marks" },
+//             maxMarks: { $max: "$marks" },
+//             minMarks: { $min: "$marks" }
+//         }
+//     },
+//     {
+//         $sort:{_id:-1}
+//     }
+// ])
 
+// db.teachers.insert(
+//     {
+//         name:"Akash",
+//         empID:"12345",
+//         spec:"DSA Trainer"
+//     }
+// )
+
+
+db.students2.updateOne(
+    { name: "Abhay" },
+    {
+        $set: {
+            teacher: [ObjectId("6ad9e07f5acac58a140a418d")]
+        }
+    }
+);
