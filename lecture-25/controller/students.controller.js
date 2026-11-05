@@ -1,4 +1,4 @@
-const Student = require("../model/student.model");
+const Student = require("../model/student.model.js");
 const getStudents = async(req,res)=>{
     try{
         const students = await Student.find();
