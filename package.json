@@ -1,0 +1,26 @@
+{
+  "name": "lectures_folder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnkitBR0025/web-dev-3-class-file.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AnkitBR0025/web-dev-3-class-file/issues"
+  },
+  "homepage": "https://github.com/AnkitBR0025/web-dev-3-class-file#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^5.3.0",
+    "nodemon": "^3.1.14"
+  }
+}
